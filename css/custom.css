@@ -1,0 +1,65 @@
+header {
+  position: fixed;
+  height: 100vh;
+  width: 210px;
+  box-shadow: 1px 0.125rem 0.25rem rgba(0, 0, 0, 0.486);
+}
+.navbar {
+  margin-top: 20px;
+  justify-content: left;
+  position: relative;
+  left: 50%;
+  transform: translate(-40%);
+}
+.navbar ul {
+  direction: none;
+}
+.navbar li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar li a {
+  font-weight: 500;
+  color: rgb(26, 24, 24);
+  text-decoration: none;
+}
+
+#cirileAvtar {
+  margin-top: 120px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 7px solid rgb(238, 68, 96);
+  background: url("../assets/images/developer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  margin-left: 210px;
+}
+
+#slide1,
+#slide2,
+#slide3 {
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+#slide1 {
+  background: url("../assets/images/bg-masthead.jpg");
+}
+#slide2 {
+  background: url("../assets/images/final.jpg");
+}
+#slide3 {
+  background: url("../assets/images/bg-masthead.jpg");
+}
+#about {
+  margin: 0;
+  padding: 25vh 0 25vh 0;
+}
