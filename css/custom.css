@@ -4,6 +4,9 @@ header {
   width: 210px;
   box-shadow: 1px 0.125rem 0.25rem rgba(0, 0, 0, 0.486);
 }
+.menue{
+  display: none;
+}
 .navbar {
   margin-top: 20px;
   justify-content: left;
@@ -46,7 +49,9 @@ header {
 #slide1,
 #slide2,
 #slide3 {
-  background-size: contain;
+  background-size: content;
+  background-repeat: no-repeat;
+  
   width: 100%;
   height: 100%;
 }
@@ -62,4 +67,90 @@ header {
 #about {
   margin: 0;
   padding: 25vh 0 25vh 0;
+}
+
+@media (max-width: 576px){
+  header{
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 70px;
+    background: #fff;
+  }
+  .menue{
+    margin-top:10px ;
+    margin-right: 70px;
+    width: 60px;
+    height: 50px;
+    display: block;
+    padding: 14px 10px 10px 10px;
+    border-radius: 5px;
+  }
+  .menue:hover{
+    background: #f2f2f2;
+  }
+  .menue .bars{
+    background: #000;
+    width: 35px;
+    margin-bottom:8px ;
+    height: 2px;
+    
+  }
+  .navbar, .closing{
+    position: absolute;
+    padding:0px 0px 10px 35% ;
+    position: absolute;
+    background: #f2f2f2;
+    width: 100vh;
+    height: 70vh;
+    top: -100vh;
+    left: 0vw;
+    transform: none;
+    
+  }
+  .closing{
+    animation: nslide 800ms;
+  }
+  .toggle{
+    padding:0px 0px 10px 35% ;
+    position: absolute;
+    background: #f2f2f2;
+    width: 100vh;
+    height: 70vh;
+    top: 50px;
+    left: 0;
+    transform: none;
+    animation: slide 800ms ;
+  }
+  .main{
+    margin: 0;
+  }
+  #cirileAvtar{
+    margin: 5;
+    left: 5%;
+    transform: none;
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgb(238, 68, 96);
+  }
+}
+@keyframes slide{
+  0%{
+top: -100vh;
+    
+  }
+  100%{
+    top: 50px;
+  }
+}
+
+@keyframes nslide{
+  0%{
+top: 50px;
+    
+  }
+  100%{
+    top: -100vh;
+  }
 }
