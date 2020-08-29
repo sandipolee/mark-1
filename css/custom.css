@@ -22,6 +22,13 @@ header {
   text-decoration: none;
   text-transform: uppercase;
 }
+.navbar li a:hover{
+  color: rgb(238, 68, 96);
+
+}
+#active{
+  color: rgb(238, 68, 96);
+}
 .navbar li a {
   font-weight: 500;
   color: rgb(26, 24, 24);
@@ -107,12 +114,14 @@ header {
     top: -100vh;
     left: 0vw;
     transform: none;
+    z-index: 998;
     
   }
   .closing{
     animation: nslide 800ms;
   }
   .toggle{
+    z-index: 998;
     padding:0px 0px 10px 35% ;
     position: absolute;
     background: #f2f2f2;
